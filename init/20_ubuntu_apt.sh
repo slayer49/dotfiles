@@ -39,9 +39,7 @@ apt_packages+=(
   id3tool
   imagemagick
   jq
-  mercurial
   nmap
-  postgresql
   python-pip
   silversearcher-ag
   sl
@@ -56,11 +54,6 @@ is_ubuntu_desktop && apt_packages+=(vim-gnome)
 # https://github.com/neovim/neovim/wiki/Installing-Neovim
 add_ppa ppa:neovim-ppa/stable
 apt_packages+=(neovim)
-
-# https://launchpad.net/~stebbins/+archive/ubuntu/handbrake-releases
-add_ppa ppa:stebbins/handbrake-releases
-apt_packages+=(handbrake-cli)
-is_ubuntu_desktop && apt_packages+=(handbrake-gtk)
 
 # https://github.com/rvm/ubuntu_rvm
 add_ppa ppa:rael-gc/rvm
